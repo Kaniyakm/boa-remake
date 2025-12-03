@@ -1,0 +1,72 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank of America — Login</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <img src="assets/logo.svg" alt="Bank of America" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Wealth Management</a></li>
+          <li><a href="#">Corporations & Institutions</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">En español</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <button>🔍</button>
+      </div>
+    </header>
+
+    <main class="login-main">
+      <section class="login-form">
+        <h2>Secure Login</h2>
+        <form id="loginForm">
+          <label for="userId">User ID</label>
+          <input type="text" id="userId" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+
+          <label class="checkbox">
+            <input type="checkbox" id="saveId" /> Save User ID
+          </label>
+
+          <button type="submit" class="btn login-btn">Log in</button>
+        </form>
+      </section>
+
+      <section class="promo-banner">
+        <img src="assets/banner.jpg" alt="Financial Center" />
+        <div class="promo-text">
+          <h3>A new financial center in your neighborhood</h3>
+          <p>
+            Brookhaven, we're here to listen to your goals and offer
+            personalized advice.
+          </p>
+          <a href="contact.html" class="btn talk-btn">Let's talk</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="promo-footer">
+      <p>
+        CASH OFFER UP TO $500 for new checking customers
+        <a href="offer.html">See details</a>
+      </p>
+    </footer>
+
+    <script src="scripts/auth.js"></script>
+  </body>
+</html>
