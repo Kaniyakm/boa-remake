@@ -34,56 +34,89 @@ body {
 .search-bar button {
   padding: 5px 10px;
 }
+/* 1. Main Container: Layout and Background */
 .login-main {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  background-color: #fff;
+    display: flex;              /* Aligns children side-by-side */
+    justify-content: center;    /* Centers the content horizontally */
+    align-items: center;        /* Aligns items vertically in the middle */
+    gap: 40px;                  /* Adds space between the login form and the image */
+    padding: 50px 20px;         /* Adds breathing room inside the container */
+    
+    /* Gradient background using light colors (Light blue to white) */
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    min-height: 80vh;           /* Ensures it takes up most of the screen height */
 }
+
+/* 2. Login Section (Left Side) */
 .login-form {
-  width: 40%;
+    flex: 1;                    /* Allows it to grow/shrink */
+    max-width: 400px;           /* Prevents it from getting too wide */
+    background: white;          /* White box for the form itself */
+    padding: 30px;
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
+
+/* Form Elements Styling for cleaner look */
 .login-form h2 {
-  color: #003366;
+    margin-bottom: 20px;
+    color: #012169;             /* Bank of America dark blue style */
 }
+
 .login-form label {
-  display: block;
-  margin-top: 15px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
 }
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;     /* Ensures padding doesn't break width */
 }
-.checkbox {
-  margin-top: 10px;
+
+.btn.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0073cf;  /* BoA Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
 }
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #003366;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-}
+
+/* 3. Promo/Image Section (Right Side) */
 .promo-banner {
-  width: 50%;
-  padding-left: 40px;
+    flex: 1;                    /* Allows it to share equal space */
+    max-width: 500px;           /* Limits image width */
+    text-align: center;         /* Centers the text below the image */
 }
+
 .promo-banner img {
-  width: 100%;
-  border-radius: 8px;
+    width: 100%;                /* Makes image responsive */
+    height: auto;               /* Maintains aspect ratio */
+    border-radius: 8px;         /* Matches the form's rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position:relative
 }
+
+.promo-text {
+    margin-top: 15px;
+    color: #333;
+}
+
 .promo-text h3 {
-  margin-top: 20px;
-  color: #c8102e;
+    color: #012169;
+    margin-bottom: 10px;
 }
+
 .promo-footer {
   background-color: #c8102e;
   color: #fff;
